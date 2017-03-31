@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}投资团队-光信投资{% endblock %}
+
+{% block container %}
+    <section class="banner">
+        <img class="banner-bg" src="{{ MEDIA_URL }}{{ investment_banner.banner_bg }}" alt="">
+        <div class="banner-info">
+            <span class="top-line"></span>
+            <h1 class="banner-title">{{ investment_banner.name }}</h1>
+            <p class="banner-explain">{{ investment_banner.explain }}</p>
+            <a class="link-bottom" href="#invest">
+                <i class="arrow-down"></i>
+            </a>
+        </div>
+    </section>
+    <section id="invest">
+        <div class="invest-top">
+            <div class="invest-info">
+                <span class="top-line"></span>
+                <h2 class="invest-title">投资团队</h2>
+                <p class="invest-explain">
+                    我们目前拥有20人的投资和管理团队，绝大部分毕业于清华、北大等国内顶尖大学，之前拥有在KKR、摩根士丹利、中金、IDG、平安等国内外顶级金融机构的工作经历。</p>
+            </div>
+            <ul class="invest-list right">
+                {% for item in investmenth %}
+                    <li class="invest-item">
+                        <img class="person-photo" src="{{ MEDIA_URL }}{{ item.photo }}" alt="">
+                        <div class="person-info">
+                            <span class="top-line"></span>
+                            <h3 class="person-name">{{ item.name }}</h3>
+                            <p class="person-explain">{{ item.description }}</p>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <ul class="invest-list">
+            {% for item in investmentc %}
+                <li class="invest-item">
+                    <img class="person-photo" src="{{ MEDIA_URL }}{{ item.photo }}" alt="">
+                    <div class="person-info">
+                        <span class="top-line"></span>
+                        <h3 class="person-name">{{ item.name }}</h3>
+                        <p class="person-explain">{{ item.description }}</p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

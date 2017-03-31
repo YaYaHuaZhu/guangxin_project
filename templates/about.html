@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}关于我们-光信投资{% endblock %}
+
+{% block container %}
+    <section class="banner">
+        <img class="banner-bg" src="{{ MEDIA_URL }}{{ about_banner.banner_bg }}" alt="">
+        <div class="banner-info">
+            <span class="top-line"></span>
+            <h1 class="banner-title">{{ about_banner.name }}</h1>
+            <p class="banner-explain">{{ about_banner.explain }}</p>
+            <a class="link-bottom" href="#about">
+                <i class="arrow-down"></i>
+            </a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-us">
+            <div class="img-wrap">
+                <img src="{% static 'img/banner-about.jpg' %}" alt="关于我们banner">
+            </div>
+            <div class="about-us-info">
+                <span class="top-line"></span>
+                <h2 class="about-us-title">关于我们</h2>
+                <p class="about-us-explain">
+                    光信资本是一家专注于投资中国互联网领袖公司的投资机构，专注在娱乐、交易平台、电商、大数据、企业服务、人工智能、医疗、金融等有长远发展潜力的垂直领域。光信资本目前拥有20人的投资和管理团队，绝大部分毕业于清华、北大等国内顶尖大学，之前拥有在KKR、摩根士丹利、中金、IDG、平安等国内外顶级金融机构的工作经历。过去5年中，光信资本成功投资了近40家优秀公司，已经有13家被投企业在美国、香港和中国上市或者通过并购退出。</p>
+            </div>
+        </div>
+        <div class="honors">
+            <div class="honors-info">
+                <span class="top-line"></span>
+                <h2 class="honors-title">所获荣誉</h2>
+                <ul class="honors-explain">
+                    <li class="honors-item">清科2016年中国股权投资新锐机构20强</li>
+                    <li class="honors-item">清科2016年中国创业投资机构100强</li>
+                    <li class="honors-item">融资中国2015-2016年度中国TMT产业十佳投资机构</li>
+                    <li class="honors-item">投资中国2016年度中国互联网产业最佳移动互联网领域投资机构TOP10</li>
+                    <li class="honors-item">融资中国2016年度中国最佳创业投资机构50强</li>
+                    <li class="honors-item">华兴资本2016年度新兴VC投资机构</li>
+                    <li class="honors-item">亿欧2016中国VC新势力TOP20</li>
+                    <li class="honors-item">美利金融荣获“融资中国2015-2016年度中国TMT产业十佳投资案例”</li>
+                </ul>
+            </div>
+            <div class="img-wrap">
+                <img src="{% static 'img/about-honors.jpg' %}" alt="">
+            </div>
+        </div>
+    </section>
+{% endblock %}

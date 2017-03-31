@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}首页-光信投资{% endblock %}
+
+{% block container %}
+    <video class="video" autoplay="autoplay" loop="loop" src="{{ MEDIA_URL }}{{ index_banner.background_video }}"></video>
+    <div class="content-wrapper">
+        <div class="content">
+            <img src="{{ MEDIA_URL }}{{ index_banner.banner_info }}" alt="光信资本">
+            <a href="{% url 'about' %}">了解更多<span>→</span></a>
+        </div>
+    </div>
+{% endblock %}

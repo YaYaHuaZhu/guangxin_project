@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}联系我们-光信投资{% endblock %}
+
+{% block container %}
+    <section class="banner">
+        <img class="banner-bg" src="{{ MEDIA_URL }}{{ contact_banner.banner_bg }}" alt="">
+        <div class="banner-info">
+            <span class="top-line"></span>
+            <h1 class="banner-title">{{ MEDIA_URL }}{{ contact_banner.name }}</h1>
+            <p class="banner-explain">{{ contact_banner.explain }}</p>
+            <a class="link-bottom" href="#contact">
+                <i class="arrow-down"></i>
+            </a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-top">
+            <div class="contact-info">
+                <p class="info-explain">地址：中国北京市朝阳区光华路1号嘉里中心南楼818单元</p>
+                <p class="info-explain">电话：(8610) 8529 9890 </p>
+                <p class="info-explain">传真：(8610) 8529 9892 </p>
+                <p class="info-explain">商业计划书请投递至：info@gxcapital.com.cn </p>
+                <p class="info-explain">加入我们：hr@gxcapital.com.cn </p>
+            </div>
+            <aside class="contact-link">
+                <header class="contact-link-header">
+                    <h2 class="contact-link-title">关注我们</h2>
+                </header>
+                <div class="contact-link-content">
+                    <img src="{% static 'img/sina.jpg' %}" alt="">
+                    <img src="{% static 'img/wechat.jpg' %}" alt="">
+                </div>
+            </aside>
+        </div>
+        <div class="contact-map">
+            <img src="{% static 'img/map/contact-map.jpg' %}" alt="">
+        </div>
+    </section>
+{% endblock %}
