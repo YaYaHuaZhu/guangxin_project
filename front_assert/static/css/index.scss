@@ -234,7 +234,6 @@ img, video {
           opacity: 0;
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s 2s forwards;
-          -ms-animation: DownToTop 1s 2s forwards;
           .arrow-down {
             position: absolute;
             top: 0;
@@ -245,7 +244,6 @@ img, video {
             border-radius: 50%;
             background: url("../img/arrow_down.png") center no-repeat;
             animation: topToDown 1.5s 3s infinite;
-            -ms-animation: topToDown 1.5s 3s infinite;
           }
         }
       }
@@ -652,8 +650,8 @@ img, video {
     #newWrap {
       width: 100%;
       min-height: 100%;
-      transform: scaleY(0);
-      -ms-transform: scaleY(0);
+      transform: scale(0);
+      -ms-transform: scale(0);
       background-color: $background-white;
       position: absolute;
       top: 0;
