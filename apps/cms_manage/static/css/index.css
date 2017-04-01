@@ -526,8 +526,8 @@ img, video {
               position: absolute;
               transform: scaleY(0);
               -ms-transform: scaleY(0);
+              top: 20px;
               left: 19px;
-              top: 10px;
               z-index: 1;
               border-left: 1px solid white;
               border-right: 1px solid white; }
