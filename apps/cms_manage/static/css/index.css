@@ -2,8 +2,17 @@
   padding: 0;
   margin: 0; }
 
+header, aside, article, footer, nav {
+  display: block; }
+
 ul, ol {
   list-style: none; }
+
+a, button {
+  outline: none; }
+
+img {
+  border: 0 none; }
 
 a {
   text-decoration: none; }
@@ -97,12 +106,13 @@ img, video {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.2); }
+      background-color: rgba(0, 0, 0, 0.5); }
       .main .container .content-wrapper .content {
         position: absolute;
         left: 50%;
         top: 35%;
         transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         text-align: center; }
         .main .container .content-wrapper .content img {
           display: block; }
@@ -143,22 +153,24 @@ img, video {
           width: 40px;
           height: 4px;
           background-color: white;
-          opacity: 0;
+          opacity: 1;
           transform: translate3D(0, 0, 0);
-          animation: DownToTop 1s .5s forwards; }
+          animation: DownToTop 1s .5s forwards;
+          -ms-animation: DownToTop 1s .5s forwards; }
         .main .container .banner .banner-info .banner-title {
           font-size: 46px;
           line-height: 86px;
           font-weight: normal;
-          opacity: 0;
+          opacity: 1;
           transform: translate3D(0, 0, 0);
-          animation: DownToTop 1s 1s forwards; }
+          animation: DownToTop 1s 1s forwards;
+          -ms-animation: DownToTop 1s 1s forwards; }
         .main .container .banner .banner-info .banner-explain {
           margin-top: 40px;
           font-size: 36px;
           line-height: 70px;
           max-width: 1280px;
-          opacity: 0;
+          opacity: 1;
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s 1.5s forwards; }
         .main .container .banner .banner-info .link-bottom {
@@ -169,7 +181,7 @@ img, video {
           border: 1px solid white;
           border-radius: 50%;
           position: relative;
-          opacity: 0;
+          opacity: 1;
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s 2s forwards; }
           .main .container .banner .banner-info .link-bottom .arrow-down {
@@ -190,6 +202,9 @@ img, video {
         width: 100%;
         background-color: white;
         overflow: auto; }
+        .main .container #about .about-us:hover .img-wrap img {
+          transform: scale(1.5);
+          -ms-transform: scale(1.5); }
         .main .container #about .about-us .img-wrap {
           width: 700px;
           height: 100%;
@@ -222,6 +237,9 @@ img, video {
         background-color: #2f2f2f;
         margin-top: 20px;
         overflow: auto; }
+        .main .container #about .honors:hover .img-wrap img {
+          transform: scale(1.5);
+          -ms-transform: scale(1.5); }
         .main .container #about .honors .honors-info {
           float: left;
           width: 520px;
@@ -366,7 +384,7 @@ img, video {
             opacity: 1; }
           .main .container #investProject .invest-pro-list .invest-pro-item:hover .invest-pro-item-bg {
             transition: 1s;
-            transform: scale(1.2); }
+            -ms-transform: scale(1.2); }
           .main .container #investProject .invest-pro-list .invest-pro-item .invest-pro-item-bg {
             width: 450px;
             height: 450px; }
@@ -406,9 +424,11 @@ img, video {
             height: 100%;
             overflow: hidden; }
             .main .container #news .news-list .news-item .news-link:hover:after {
+              -ms-transform: scaleX(1);
               transform: scaleX(1); }
             .main .container #news .news-list .news-item .news-link:hover:before {
-              transform: scaleY(1); }
+              transform: scaleY(1);
+              -ms-transform: scaleY(1); }
             .main .container #news .news-list .news-item .news-link:after {
               content: "";
               width: 408px;
@@ -416,6 +436,7 @@ img, video {
               transition: 1s;
               position: absolute;
               transform: scaleX(0);
+              -ms-transform: scaleX(0);
               left: 20px;
               top: 19px;
               border-top: 1px solid white;
@@ -427,6 +448,7 @@ img, video {
               transition: 1s;
               position: absolute;
               transform: scaleY(0);
+              -ms-transform: scaleY(0);
               left: 19px;
               top: 20px;
               z-index: 1;
@@ -442,7 +464,7 @@ img, video {
               padding: 40px;
               top: 0;
               left: 0;
-              background-color: rgba(0, 0, 0, 0.2); }
+              background-color: rgba(0, 0, 0, 0.5); }
               .main .container #news .news-list .news-item .news-link .news-info .info-logo {
                 width: 45px;
                 height: 35px; }
@@ -488,7 +510,9 @@ img, video {
     .main .container #newWrap {
       width: 100%;
       min-height: 100%;
+      display: none;
       transform: scaleY(0);
+      -ms-transform: scaleY(0);
       background-color: white;
       position: absolute;
       top: 0;
@@ -528,7 +552,7 @@ img, video {
           line-height: 120px;
           border-radius: 50%; }
           .main .container #newWrap .new-footer #close:hover {
-            background-color: rgba(0, 0, 0, 0.2); }
+            background-color: rgba(0, 0, 0, 0.5); }
     .main .container #contact {
       width: 1500px;
       margin: 0 auto;
@@ -588,12 +612,26 @@ img, video {
   100% {
     top: 15px;
     opacity: 0; } }
+@-ms-keyframes topToDown {
+  0% {
+    top: -15px;
+    opacity: 1; }
+  100% {
+    top: 15px;
+    opacity: 0; } }
 @keyframes DownToTop {
   0% {
     transform: translate3D(0, 50px, 0);
     opacity: 0; }
   100% {
     transform: translate3D(0, 0, 0);
+    opacity: 1; } }
+@-ms-keyframes DownToTop {
+  0% {
+    -ms-transform: translate3D(0, 50px, 0);
+    opacity: 0; }
+  100% {
+    -ms-transform: translate3D(0, 0, 0);
     opacity: 1; } }
 
 /*# sourceMappingURL=index.css.map */

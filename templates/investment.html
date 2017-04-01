@@ -3,7 +3,7 @@
 {% block title %}投资团队-光信投资{% endblock %}
 
 {% block container %}
-    <section class="banner">
+    <div class="banner">
         <img class="banner-bg" src="{{ MEDIA_URL }}{{ investment_banner.banner_bg }}" alt="">
         <div class="banner-info">
             <span class="top-line"></span>
@@ -13,8 +13,8 @@
                 <i class="arrow-down"></i>
             </a>
         </div>
-    </section>
-    <section id="invest">
+    </div>
+    <div id="invest">
         <div class="invest-top">
             <div class="invest-info">
                 <span class="top-line"></span>
@@ -47,5 +47,5 @@
                 </li>
             {% endfor %}
         </ul>
-    </section>
+    </div>
 {% endblock %}

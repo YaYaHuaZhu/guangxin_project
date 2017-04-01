@@ -3,7 +3,7 @@
 {% block title %}联系我们-光信投资{% endblock %}
 
 {% block container %}
-    <section class="banner">
+    <div class="banner">
         <img class="banner-bg" src="{{ MEDIA_URL }}{{ contact_banner.banner_bg }}" alt="">
         <div class="banner-info">
             <span class="top-line"></span>
@@ -13,8 +13,8 @@
                 <i class="arrow-down"></i>
             </a>
         </div>
-    </section>
-    <section id="contact">
+    </div>
+    <div id="contact">
         <div class="contact-top">
             <div class="contact-info">
                 <p class="info-explain">地址：{{ contact.address }}</p>
@@ -23,7 +23,7 @@
                 <p class="info-explain">商业计划书请投递至：{{ contact.business_email }}</p>
                 <p class="info-explain">加入我们：{{ contact.hr_email }}</p>
             </div>
-            <aside class="contact-link">
+            <div class="contact-link">
                 <header class="contact-link-header">
                     <h2 class="contact-link-title">关注我们</h2>
                 </header>
@@ -31,10 +31,10 @@
                     <img src="{{ MEDIA_URL }}{{ contact.sina_qr }}" alt="">
                     <img src="{{ MEDIA_URL }}{{ contact.wechat_qr }}" alt="">
                 </div>
-            </aside>
+            </div>
         </div>
         <div class="contact-map">
             <img src="{{ MEDIA_URL }}{{ contact.map }}" alt="">
         </div>
-    </section>
+    </div>
 {% endblock %}

@@ -3,7 +3,7 @@
 {% block title %}投资项目-光信投资{% endblock %}
 
 {% block container %}
-    <section class="banner">
+    <div class="banner">
         <img class="banner-bg" src="{{ MEDIA_URL }}{{ investpro_banner.banner_bg }}" alt="">
         <div class="banner-info">
             <span class="top-line"></span>
@@ -13,9 +13,9 @@
                 <i class="arrow-down"></i>
             </a>
         </div>
-    </section>
-    <section id="investProject">
-        <header class="invest-pro-top">
+    </div>
+    <div id="investProject">
+        <div class="invest-pro-top">
             <h2 class="invest-pro-title">投资项目</h2>
             <div class="invest-pro-select">
                 <strong>分类：</strong>
@@ -24,7 +24,7 @@
                     <a {% ifequal type item.id|stringformat:'i' %}class="active"{% endifequal %} href="?type={{ item.id }}#investProject">{{ item.name }}</a>
                 {% endfor %}
             </div>
-        </header>
+        </div>
         <ul class="invest-pro-list">
             {% for item in invest_pro %}
             <li class="invest-pro-item">
@@ -36,5 +36,5 @@
             </li>
             {% endfor %}
         </ul>
-    </section>
+    </div>
 {% endblock %}

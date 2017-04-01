@@ -3,7 +3,7 @@
 {% block title %}新闻报道-光信投资{% endblock %}
 
 {% block container %}
-    <section class="banner">
+    <div class="banner">
         <img class="banner-bg" src="{{ MEDIA_URL }}{{ news_banner.banner_bg }}" alt="">
         <div class="banner-info">
             <span class="top-line"></span>
@@ -13,8 +13,8 @@
                 <i class="arrow-down"></i>
             </a>
         </div>
-    </section>
-    <section id="news">
+    </div>
+    <div id="news">
         <ul class="news-list">
             {% for item in news.object_list %}
             <li class="news-item">
@@ -47,15 +47,15 @@
             <li><a href="?{{ news.next_page_number.querystring }}#news">下一页</a></li>
         {% endif %}
         </ul>
-    </section>
-    <article id="newWrap">
-        <header class="new-header">
+    </div>
+    <div id="newWrap">
+        <div class="new-header">
             <h1 class="new-title"></h1>
-        </header>
+        </div>
         <div class="new-content">
         </div>
-        <footer class="new-footer">
+        <div class="new-footer">
             <button id="close">&Chi;</button>
-        </footer>
-    </article>
+        </div>
+    </div>
 {% endblock %}
