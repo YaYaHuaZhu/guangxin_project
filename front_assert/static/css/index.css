@@ -646,6 +646,7 @@ img, video {
           @media only screen and (max-width: 1500px) {
             .main .container #contact .contact-top .contact-info {
               width: 420px;
+              height: 450px;
               padding: 20px; } }
           .main .container #contact .contact-top .contact-info .info-explain {
             font-size: 18px;

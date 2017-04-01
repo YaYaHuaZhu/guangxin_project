@@ -803,6 +803,7 @@ img, video {
           float: left;
           @include respond-to(md) {
             width: 420px;
+            height: 450px;
             padding: 20px;
           }
           .info-explain {
