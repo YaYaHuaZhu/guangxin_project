@@ -11,6 +11,9 @@ ul, ol {
 a, button {
   outline: none; }
 
+img {
+  border: 0 none; }
+
 a {
   text-decoration: none; }
 
