@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.views.generic.base import View
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 from django.http.response import HttpResponse
@@ -113,3 +113,15 @@ class ContactView(View):
             'contact_banner': contact_banner,
             'contact': contact
         })
+
+
+def page_not_found(request):
+    response = render_to_response("404.html", {})
+    response.status_code = 404
+    return response
+
+
+def page_error(request):
+    response = render_to_response('500.html', {})
+    response.status_code = 500
+    return response

@@ -16,11 +16,11 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.views.static import serve
-from guangxin_project.settings import MEDIA_ROOT
+from guangxin_project.settings import MEDIA_ROOT, STATIC_ROOT
 import xadmin
 
 from cms_manage.views import IndexView, AboutView, InvestMentView, InvestProjectView, NewsView
-from cms_manage.views import ContactView, NewsShowView
+from cms_manage.views import ContactView, NewsShowView, page_not_found, page_error
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -33,5 +33,9 @@ urlpatterns = [
     url(r'^news/(?P<news_id>\d+)$', NewsShowView.as_view(), name="news_show"),
     url(r'^contact/$', ContactView.as_view(), name="contact"),
     url(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),
+    url(r'^static/(?P<path>.*)$', serve, {"document_root": STATIC_ROOT}),
     url(r'^ckeditor/', include('ckeditor_uploader.urls'))
 ]
+
+handler404 = page_not_found
+handler500 = page_error
