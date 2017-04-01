@@ -650,8 +650,9 @@ img, video {
     #newWrap {
       width: 100%;
       min-height: 100%;
-      transform: scale(0);
-      -ms-transform: scale(0);
+      display: none;
+      transform: scaleY(0);
+      -ms-transform: scaleY(0);
       background-color: $background-white;
       position: absolute;
       top: 0;

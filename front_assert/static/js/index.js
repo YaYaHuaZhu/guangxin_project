@@ -8,6 +8,7 @@
         _close = doc.getElementById('close');
     for(var i = 0,item;item = _news[i++];) {
         item.onclick = function () {
+            _newWrap.style.display = 'block';
             _newWrap.style.transition = '.5s';
             _newWrap.style.transform = 'scaleY(1)';
             doc.body.scrollTop = 0;
@@ -17,5 +18,6 @@
     _close.onclick = function () {
         _newWrap.style.transition = '.5s';
         _newWrap.style.transform = 'scaleY(0)';
+        _newWrap.style.display = 'none';
     };
 })(document);
