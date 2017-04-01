@@ -18,6 +18,10 @@ $border-color: rgba(181, 181, 181, 0.5);
   margin: 0;
 }
 
+header, aside, article, footer, nav {
+  display: block;
+}
+
 ul, ol {
   list-style: none;
 }

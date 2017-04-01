@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0; }
 
+header, aside, article, footer, nav {
+  display: block; }
+
 ul, ol {
   list-style: none; }
 

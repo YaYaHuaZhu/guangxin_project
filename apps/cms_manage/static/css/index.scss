@@ -5,7 +5,7 @@ $background-white: rgb(255, 255, 255);
 $background-gray: rgb(47, 47, 47);
 $background-footer: rgb(0, 0, 0);
 $orange: rgb(240, 123, 27);
-$grey-alpha: rgba(0, 0, 0, 0.5);
+$grey-alpha: rgba(0, 0, 0, 0.2);
 $close-bg: rgba(0,0,0, 0.2);
 $background-container: rgb(234, 234, 234);
 $color-gray: rgb(154, 154, 154);
@@ -244,13 +244,6 @@ img, video {
         width: 100%;
         background-color: $background-white;
         overflow: auto;
-        &:hover {
-          .img-wrap {
-            img {
-              transform: scale(1.5);
-            }
-          }
-        }
         .img-wrap {
           width: 700px;
           height: 100%;
@@ -290,13 +283,6 @@ img, video {
         background-color: $background-gray;
         margin-top: 20px;
         overflow: auto;
-        &:hover {
-          .img-wrap {
-            img {
-              transform: scale(1.5);
-            }
-          }
-        }
         .honors-info {
           float: left;
           width: 520px;

@@ -81,6 +81,9 @@ class Contact(models.Model):
     fax = models.CharField(max_length=100, verbose_name=u"传真")
     business_email = models.EmailField(verbose_name=u"商业联系邮箱")
     hr_email = models.EmailField(verbose_name=u"人事招聘邮箱")
+    sina_qr = models.ImageField(upload_to="contact/%Y/%m", null=True, blank=True, verbose_name=u"新浪二维码")
+    wechat_qr = models.ImageField(upload_to="contact/%Y/%m", null=True, blank=True, verbose_name=u"微信二维码")
+    map = models.ImageField(upload_to="contact/%Y/%m", verbose_name=u"公司地图")
     order = models.IntegerField(default=0, verbose_name=u"顺序（只会显示顺序值最高的一组信息）")
     create_time = models.DateTimeField(default=datetime.now, verbose_name=u"创建时间")
 

@@ -4,9 +4,10 @@ from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 from django.http.response import HttpResponse
 import json
 
-from models import InvestMent, InvestProCategory, InvestPro, News
+from models import InvestMent, InvestProCategory, InvestPro, News, Contact
 from banner_manage.models import IndexBanner, AboutBanner, InvestMentBanner
 from banner_manage.models import InvestProBanner, NewsBanner, ContactBanner
+from about_us.models import AboutUs, Honors, HonorInfo
 # Create your views here.
 
 
@@ -23,10 +24,21 @@ class IndexView(View):
 class AboutView(View):
     def get(self, request):
         about_banner = AboutBanner.objects.all().order_by('-order')
+        about_us_info = AboutUs.objects.all().order_by('-order')
+        honor_info = HonorInfo.objects.all().order_by('-order')
+        honors = ''
         if about_banner:
             about_banner = about_banner[0]
+        if about_us_info:
+            about_us_info = about_us_info[0]
+        if honor_info:
+            honor_info = honor_info[0]
+            honors = Honors.objects.filter(own=honor_info).order_by('-order')[:8]
         return render(request, "about.html", {
-            "about_banner": about_banner
+            "about_banner": about_banner,
+            "about_us_info": about_us_info,
+            "honor_info": honor_info,
+            "honors": honors
         })
 
 
@@ -92,8 +104,12 @@ class NewsShowView(View):
 class ContactView(View):
     def get(self, request):
         contact_banner = ContactBanner.objects.all().order_by('-order')
+        contact = Contact.objects.all().order_by('-order')
         if contact_banner:
             contact_banner = contact_banner[0]
+        if contact:
+            contact = contact[0]
         return render(request, "contact.html", {
-            'contact_banner': contact_banner
+            'contact_banner': contact_banner,
+            'contact': contact
         })

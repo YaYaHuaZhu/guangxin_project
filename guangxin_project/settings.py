@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'pure_pagination',
     'crispy_forms',
     'cms_manage',
-    'banner_manage'
+    'banner_manage',
+    'about_us'
 ]
 
 MIDDLEWARE_CLASSES = [

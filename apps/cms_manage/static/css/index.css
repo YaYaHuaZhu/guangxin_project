@@ -97,7 +97,7 @@ img, video {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); }
+      background-color: rgba(0, 0, 0, 0.2); }
       .main .container .content-wrapper .content {
         position: absolute;
         left: 50%;
@@ -190,8 +190,6 @@ img, video {
         width: 100%;
         background-color: white;
         overflow: auto; }
-        .main .container #about .about-us:hover .img-wrap img {
-          transform: scale(1.5); }
         .main .container #about .about-us .img-wrap {
           width: 700px;
           height: 100%;
@@ -224,8 +222,6 @@ img, video {
         background-color: #2f2f2f;
         margin-top: 20px;
         overflow: auto; }
-        .main .container #about .honors:hover .img-wrap img {
-          transform: scale(1.5); }
         .main .container #about .honors .honors-info {
           float: left;
           width: 520px;
@@ -446,7 +442,7 @@ img, video {
               padding: 40px;
               top: 0;
               left: 0;
-              background-color: rgba(0, 0, 0, 0.5); }
+              background-color: rgba(0, 0, 0, 0.2); }
               .main .container #news .news-list .news-item .news-link .news-info .info-logo {
                 width: 45px;
                 height: 35px; }
@@ -532,7 +528,7 @@ img, video {
           line-height: 120px;
           border-radius: 50%; }
           .main .container #newWrap .new-footer #close:hover {
-            background-color: rgba(0, 0, 0, 0.5); }
+            background-color: rgba(0, 0, 0, 0.2); }
     .main .container #contact {
       width: 1500px;
       margin: 0 auto;
