@@ -169,8 +169,7 @@ img, video {
           max-width: 1280px;
           opacity: 1;
           transform: translate3D(0, 0, 0);
-          animation: DownToTop 1s 1.5s forwards;
-          -ms-animation: DownToTop 1s 1.5s forwards; }
+          animation: DownToTop 1s 1.5s forwards; }
         .main .container .banner .banner-info .link-bottom {
           margin-top: 50px;
           display: block;
@@ -179,7 +178,7 @@ img, video {
           border: 1px solid white;
           border-radius: 50%;
           position: relative;
-          opacity: 0;
+          opacity: 1;
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s 2s forwards; }
           .main .container .banner .banner-info .link-bottom .arrow-down {
