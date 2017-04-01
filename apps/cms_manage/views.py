@@ -33,7 +33,7 @@ class AboutView(View):
             about_us_info = about_us_info[0]
         if honor_info:
             honor_info = honor_info[0]
-            honors = Honors.objects.filter(own=honor_info).order_by('-order')[:8]
+            honors = Honors.objects.filter(own=honor_info).order_by('-order')
         return render(request, "about.html", {
             "about_banner": about_banner,
             "about_us_info": about_us_info,

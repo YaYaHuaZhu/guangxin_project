@@ -43,7 +43,7 @@ class Honors(models.Model):
     own = models.ForeignKey(HonorInfo, verbose_name=u"所属")
     name = models.CharField(max_length=200, verbose_name=u"荣誉名称")
     name_en = models.CharField(max_length=200, null=True, blank=True, verbose_name=u"荣誉名称（英文）")
-    order = models.IntegerField(default=0, verbose_name=u"顺序（只显示顺序值最大的8条内容）")
+    order = models.IntegerField(default=0, verbose_name=u"顺序")
     create_time = models.DateTimeField(default=datetime.now, verbose_name=u"创建时间")
 
     class Meta:

@@ -148,6 +148,10 @@ img, video {
         position: absolute;
         left: 200px;
         top: 140px; }
+        @media only screen and (max-width: 1500px) {
+          .main .container .banner .banner-info {
+            left: 100px;
+            top: 70px; } }
         .main .container .banner .banner-info .top-line {
           display: block;
           width: 40px;
@@ -171,6 +175,9 @@ img, video {
           opacity: 0;
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s 1.5s forwards; }
+          @media only screen and (max-width: 1500px) {
+            .main .container .banner .banner-info .banner-explain {
+              max-width: 920px; } }
         .main .container .banner .banner-info .link-bottom {
           margin-top: 50px;
           display: block;
@@ -195,16 +202,25 @@ img, video {
     .main .container #about {
       width: 1500px;
       margin: 25px auto 40px; }
+      @media only screen and (max-width: 1500px) {
+        .main .container #about {
+          width: 1200px; } }
       .main .container #about .about-us {
         height: 510px;
         width: 100%;
         background-color: white;
         overflow: auto; }
+        @media only screen and (max-width: 1500px) {
+          .main .container #about .about-us {
+            height: 410px; } }
         .main .container #about .about-us .img-wrap {
           width: 700px;
           height: 100%;
           overflow: hidden;
           float: left; }
+          @media only screen and (max-width: 1500px) {
+            .main .container #about .about-us .img-wrap {
+              width: 560px; } }
           .main .container #about .about-us .img-wrap img {
             width: 100%;
             height: 100%;
@@ -213,6 +229,10 @@ img, video {
           width: 700px;
           padding: 80px 50px 0;
           float: right; }
+          @media only screen and (max-width: 1500px) {
+            .main .container #about .about-us .about-us-info {
+              width: 600px;
+              padding: 40px 20px 0; } }
           .main .container #about .about-us .about-us-info .top-line {
             display: block;
             width: 10px;
@@ -231,12 +251,22 @@ img, video {
         width: 100%;
         background-color: #2f2f2f;
         margin-top: 20px;
-        overflow: auto; }
+        overflow: hidden; }
+        @media only screen and (max-width: 1500px) {
+          .main .container #about .honors {
+            height: 430px; } }
         .main .container #about .honors .honors-info {
           float: left;
           width: 520px;
           color: white;
-          padding: 80px 30px 0; }
+          padding: 80px 30px;
+          overflow-y: auto;
+          height: 380px; }
+          @media only screen and (max-width: 1500px) {
+            .main .container #about .honors .honors-info {
+              width: 600px;
+              padding: 40px 20px;
+              height: 350px; } }
           .main .container #about .honors .honors-info .top-line {
             display: block;
             width: 10px;
@@ -260,22 +290,35 @@ img, video {
           width: 920px;
           height: 100%;
           overflow: hidden; }
+          @media only screen and (max-width: 1500px) {
+            .main .container #about .honors .img-wrap {
+              width: 560px; } }
           .main .container #about .honors .img-wrap img {
-            width: 960px;
+            width: 100%;
             height: 100%;
             transition: 4s; }
     .main .container #invest {
       width: 1500px;
       background-color: white;
       margin: 20px auto 50px; }
+      @media only screen and (max-width: 1500px) {
+        .main .container #invest {
+          width: 1200px; } }
       .main .container #invest .invest-top {
         height: 375px;
         overflow: auto; }
+        @media only screen and (max-width: 1500px) {
+          .main .container #invest .invest-top {
+            height: 300px; } }
         .main .container #invest .invest-top .invest-info {
           float: left;
           width: 570px;
           padding: 60px 90px 0;
           overflow: hidden; }
+          @media only screen and (max-width: 1500px) {
+            .main .container #invest .invest-top .invest-info {
+              width: 520px;
+              padding: 30px 40px 0; } }
           .main .container #invest .invest-top .invest-info .top-line {
             display: block;
             width: 10px;
@@ -292,6 +335,9 @@ img, video {
       .main .container #invest .invest-list {
         height: 375px;
         overflow: hidden; }
+        @media only screen and (max-width: 1500px) {
+          .main .container #invest .invest-list {
+            height: 300px; } }
         .main .container #invest .invest-list.right {
           float: right; }
         .main .container #invest .invest-list .invest-item {
@@ -300,11 +346,14 @@ img, video {
           width: 375px;
           height: 100%;
           overflow: hidden; }
+          @media only screen and (max-width: 1500px) {
+            .main .container #invest .invest-list .invest-item {
+              width: 300px; } }
           .main .container #invest .invest-list .invest-item:hover .person-info {
             opacity: 1;
             transition: 2s; }
           .main .container #invest .invest-list .invest-item .person-photo {
-            width: 375px;
+            width: 100%;
             height: 100%; }
           .main .container #invest .invest-list .invest-item .person-info {
             position: absolute;
@@ -316,6 +365,11 @@ img, video {
             background-color: rgba(0, 0, 0, 0.5);
             color: white;
             opacity: 0; }
+            @media only screen and (max-width: 1500px) {
+              .main .container #invest .invest-list .invest-item .person-info {
+                padding: 10px;
+                width: 280px;
+                height: 280px; } }
             .main .container #invest .invest-list .invest-item .person-info .top-line {
               margin-top: 30px;
               display: block;
@@ -336,6 +390,10 @@ img, video {
       margin: 0 auto;
       padding: 40px 50px 60px;
       background-color: white; }
+      @media only screen and (max-width: 1500px) {
+        .main .container #investProject {
+          padding: 20px 20px 40px;
+          width: 1160px; } }
       .main .container #investProject .invest-pro-top .invest-pro-title {
         font-size: 24px;
         line-height: 40px;
@@ -369,6 +427,10 @@ img, video {
           margin-right: 25px;
           margin-bottom: 25px;
           float: left; }
+          @media only screen and (max-width: 1500px) {
+            .main .container #investProject .invest-pro-list .invest-pro-item {
+              width: 370px;
+              height: 370px; } }
           .main .container #investProject .invest-pro-list .invest-pro-item:nth-of-type(3n+3) {
             margin-right: 0; }
           .main .container #investProject .invest-pro-list .invest-pro-item:hover .invest-pro-item-info {
@@ -380,6 +442,10 @@ img, video {
           .main .container #investProject .invest-pro-list .invest-pro-item .invest-pro-item-bg {
             width: 450px;
             height: 450px; }
+            @media only screen and (max-width: 1500px) {
+              .main .container #investProject .invest-pro-list .invest-pro-item .invest-pro-item-bg {
+                width: 370px;
+                height: 370px; } }
           .main .container #investProject .invest-pro-list .invest-pro-item .invest-pro-item-info {
             position: absolute;
             left: 0;
@@ -390,6 +456,11 @@ img, video {
             color: white;
             background-color: rgba(191, 25, 33, 0.7);
             opacity: 0; }
+            @media only screen and (max-width: 1500px) {
+              .main .container #investProject .invest-pro-list .invest-pro-item .invest-pro-item-info {
+                padding: 20px;
+                width: 330px;
+                height: 330px; } }
             .main .container #investProject .invest-pro-list .invest-pro-item .invest-pro-item-info .info-url, .main .container #investProject .invest-pro-list .invest-pro-item .invest-pro-item-info .info-explain {
               font-size: 16px;
               line-height: 36px;
@@ -399,6 +470,10 @@ img, video {
       padding: 50px;
       margin: 0 auto;
       background-color: white; }
+      @media only screen and (max-width: 1500px) {
+        .main .container #news {
+          width: 1160px;
+          padding: 20px; } }
       .main .container #news .news-list {
         width: 100%;
         overflow: auto; }
@@ -407,6 +482,10 @@ img, video {
           height: 300px;
           margin: 0 25px 25px 0;
           float: left; }
+          @media only screen and (max-width: 1500px) {
+            .main .container #news .news-list .news-item {
+              height: 260px;
+              width: 370px; } }
           .main .container #news .news-list .news-item:nth-of-type(3n+3) {
             margin-right: 0; }
           .main .container #news .news-list .news-item .news-link {
@@ -423,26 +502,26 @@ img, video {
               -ms-transform: scaleY(1); }
             .main .container #news .news-list .news-item .news-link:after {
               content: "";
-              width: 408px;
-              height: 258px;
+              width: 348px;
+              height: 238px;
               transition: 1s;
               position: absolute;
               transform: scaleX(0);
               -ms-transform: scaleX(0);
-              left: 20px;
-              top: 19px;
+              left: 10px;
+              top: 9px;
               border-top: 1px solid white;
               border-bottom: 1px solid white; }
             .main .container #news .news-list .news-item .news-link:before {
               content: "";
-              width: 408px;
-              height: 258px;
+              width: 348px;
+              height: 238px;
               transition: 1s;
               position: absolute;
               transform: scaleY(0);
               -ms-transform: scaleY(0);
-              left: 19px;
-              top: 20px;
+              left: 9px;
+              top: 10px;
               z-index: 1;
               border-left: 1px solid white;
               border-right: 1px solid white; }
@@ -457,6 +536,11 @@ img, video {
               top: 0;
               left: 0;
               background-color: rgba(0, 0, 0, 0.5); }
+              @media only screen and (max-width: 1500px) {
+                .main .container #news .news-list .news-item .news-link .news-info {
+                  padding: 20px;
+                  width: 330px;
+                  height: 220px; } }
               .main .container #news .news-list .news-item .news-link .news-info .info-logo {
                 width: 45px;
                 height: 35px; }
@@ -514,6 +598,9 @@ img, video {
         width: 1500px;
         padding: 50px 0;
         margin: 0 auto; }
+        @media only screen and (max-width: 1500px) {
+          .main .container #newWrap .new-header {
+            width: 1200px; } }
         .main .container #newWrap .new-header .new-title {
           width: 100%;
           text-align: center;
@@ -550,40 +637,50 @@ img, video {
       margin: 0 auto;
       padding: 0 0 60px;
       background-color: white; }
+      @media only screen and (max-width: 1500px) {
+        .main .container #contact {
+          width: 1200px; } }
       .main .container #contact .contact-top {
-        height: 360px;
-        overflow: hidden; }
+        overflow: hidden;
+        padding: 40px; }
         .main .container #contact .contact-top .contact-info {
-          width: 820px;
-          float: left;
-          padding: 40px; }
+          width: 520px;
+          float: left; }
+          @media only screen and (max-width: 1500px) {
+            .main .container #contact .contact-top .contact-info {
+              width: 420px;
+              height: 450px;
+              padding: 20px; } }
           .main .container #contact .contact-top .contact-info .info-explain {
             font-size: 18px;
-            line-height: 48px; }
-        .main .container #contact .contact-top .contact-link {
-          width: 520px;
-          height: 280px;
-          padding: 40px;
+            line-height: 48px;
+            color: rgba(0, 0, 0, 0.5); }
+            .main .container #contact .contact-top .contact-info .info-explain .icon-wrap {
+              position: relative; }
+              .main .container #contact .contact-top .contact-info .info-explain .icon-wrap:hover .qr {
+                display: block; }
+              .main .container #contact .contact-top .contact-info .info-explain .icon-wrap .icon {
+                height: 18px;
+                cursor: pointer; }
+              .main .container #contact .contact-top .contact-info .info-explain .icon-wrap .qr {
+                width: 160px;
+                height: 160px;
+                position: absolute;
+                left: -74px;
+                display: none;
+                top: 25px;
+                padding: 5px;
+                border-radius: 3px;
+                background-color: white;
+                border: 1px solid rgba(0, 0, 0, 0.5); }
+        .main .container #contact .contact-top .contact-map {
           float: right;
-          background-color: #f6f6f6; }
-          .main .container #contact .contact-top .contact-link .contact-link-header {
-            border-bottom: 1px solid rgba(181, 181, 181, 0.5); }
-            .main .container #contact .contact-top .contact-link .contact-link-header .contact-link-title {
-              font-size: 18px;
-              line-height: 48px;
-              color: #9a9a9a;
-              font-weight: normal; }
-          .main .container #contact .contact-top .contact-link .contact-link-content {
-            margin-top: 40px; }
-            .main .container #contact .contact-top .contact-link .contact-link-content img {
-              width: 160px;
-              height: 160px;
-              margin-right: 20px; }
-      .main .container #contact .contact-map {
-        margin-top: 40px;
-        text-align: center; }
-        .main .container #contact .contact-map img {
-          max-width: 1400px; }
+          width: 900px; }
+          @media only screen and (max-width: 1500px) {
+            .main .container #contact .contact-top .contact-map {
+              width: 660px; } }
+          .main .container #contact .contact-top .contact-map img {
+            max-width: 100%; }
 
 .page-footer {
   position: relative;
