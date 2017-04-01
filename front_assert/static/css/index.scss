@@ -150,7 +150,8 @@ img, video {
         position: absolute;
         left: 50%;
         top: 35%;
-        transform: translate(-50%, -50%);
+        transform: translate3D(-50%, -50%, 0);
+        -ms-transform: translate3D(-50%, -50%, 0);
         text-align: center;
         img {
           display: block;
@@ -198,7 +199,7 @@ img, video {
           width: 40px;
           height: 4px;
           background-color: $background-white;
-          opacity: 0;
+          opacity: 1;
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s .5s forwards;
           -ms-animation: DownToTop 1s .5s forwards;
@@ -207,7 +208,7 @@ img, video {
           font-size: 46px;
           line-height: 86px;
           font-weight: normal;
-          opacity: 0;
+          opacity: 1;
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s 1s forwards;
           -ms-animation: DownToTop 1s 1s forwards;
@@ -217,7 +218,7 @@ img, video {
           font-size: 36px;
           line-height: 70px;
           max-width: 1280px;
-          opacity: 0;
+          opacity: 1;
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s 1.5s forwards;
           -ms-animation: DownToTop 1s 1.5s forwards;
