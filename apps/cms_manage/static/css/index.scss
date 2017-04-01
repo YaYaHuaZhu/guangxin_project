@@ -631,30 +631,42 @@ img, video {
             }
             &:after {
               content: "";
-              width: 348px;
-              height: 238px;
+              width: 408px;
+              height: 258px;
               transition: 1s;
               position: absolute;
               transform: scaleX(0);
               -ms-transform: scaleX(0);
-              left: 10px;
-              top: 9px;
+              left: 20px;
+              top: 19px;
               border-top: 1px solid $background-white;
               border-bottom: 1px solid $background-white;
+              @include respond-to(md) {
+                width: 348px;
+                height: 238px;
+                left: 10px;
+                top: 9px;
+              }
             }
             &:before {
               content: "";
-              width: 348px;
-              height: 238px;
+              width: 408px;
+              height: 258px;
               transition: 1s;
               position: absolute;
               transform: scaleY(0);
               -ms-transform: scaleY(0);
-              left: 9px;
-              top: 10px;
+              left: 19px;
+              top: 20px;
               z-index: 1;
               border-left: 1px solid $background-white;
               border-right: 1px solid $background-white;
+              @include respond-to(md) {
+                width: 348px;
+                height: 238px;
+                left: 9px;
+                top: 10px;
+              }
             }
             .news-bg {
               width: 100%;
