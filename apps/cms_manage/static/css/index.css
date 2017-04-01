@@ -153,24 +153,22 @@ img, video {
           width: 40px;
           height: 4px;
           background-color: white;
-          opacity: 1;
+          opacity: 0;
           transform: translate3D(0, 0, 0);
-          animation: DownToTop 1s .5s forwards;
-          -ms-animation: DownToTop 1s .5s forwards; }
+          animation: DownToTop 1s .5s forwards; }
         .main .container .banner .banner-info .banner-title {
           font-size: 46px;
           line-height: 86px;
           font-weight: normal;
-          opacity: 1;
+          opacity: 0;
           transform: translate3D(0, 0, 0);
-          animation: DownToTop 1s 1s forwards;
-          -ms-animation: DownToTop 1s 1s forwards; }
+          animation: DownToTop 1s 1s forwards; }
         .main .container .banner .banner-info .banner-explain {
           margin-top: 40px;
           font-size: 36px;
           line-height: 70px;
           max-width: 1280px;
-          opacity: 1;
+          opacity: 0;
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s 1.5s forwards; }
         .main .container .banner .banner-info .link-bottom {
@@ -181,7 +179,7 @@ img, video {
           border: 1px solid white;
           border-radius: 50%;
           position: relative;
-          opacity: 1;
+          opacity: 0;
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s 2s forwards; }
           .main .container .banner .banner-info .link-bottom .arrow-down {
@@ -202,9 +200,6 @@ img, video {
         width: 100%;
         background-color: white;
         overflow: auto; }
-        .main .container #about .about-us:hover .img-wrap img {
-          transform: scale(1.5);
-          -ms-transform: scale(1.5); }
         .main .container #about .about-us .img-wrap {
           width: 700px;
           height: 100%;
@@ -237,9 +232,6 @@ img, video {
         background-color: #2f2f2f;
         margin-top: 20px;
         overflow: auto; }
-        .main .container #about .honors:hover .img-wrap img {
-          transform: scale(1.5);
-          -ms-transform: scale(1.5); }
         .main .container #about .honors .honors-info {
           float: left;
           width: 520px;

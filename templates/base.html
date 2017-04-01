@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="./static/css/ie.css">
+    <![endif]-->
     {% block css %}{% endblock %}
 </head>
 <body>
