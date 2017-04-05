@@ -87,9 +87,7 @@ Ajax.prototype = {
             _newWrap.style.transition = '.5s';
             _newWrap.style.transform = 'scaleY(0)';
             _newWrap.style.msTransform = 'scaleY(0)';
-            setTimeout(function () {
-                _newWrap.style.display = 'none';
-            }, 500);
+            _newWrap.style.display = 'none';
         };
     }
 })(document);

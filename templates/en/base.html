@@ -20,15 +20,15 @@
             </a>
             <div class="page-nav">
                 <ul id="nav">
-                    <li {% if request.path == "/" %}class="active"{% endif %}><a href="{% url 'index' %}">首页</a></li>
-                    <li {% if request.path|slice:"6" == "/about" %}class="active"{% endif %}><a href="{% url 'about' %}">关于我们</a></li>
-                    <li {% if request.path|slice:"11" == "/investment" %}class="active"{% endif %}><a href="{% url 'investment' %}">投资团队</a></li>
-                    <li {% if request.path|slice:"14" == "/investproject" %}class="active"{% endif %}><a href="{% url 'investproject' %}">投资项目</a></li>
-                    <li {% if request.path|slice:"5" == "/news" %}class="active"{% endif %}><a href="{% url 'news' %}">新闻报道</a></li>
-                    <li {% if request.path|slice:"8" == "/contact" %}class="active"{% endif %}><a href="{% url 'contact' %}">联系我们</a></li>
+                    <li {% if request.path == "/en/" %}class="active"{% endif %}><a href="{% url 'en_index' %}">Index</a></li>
+                    <li {% if request.path|slice:"9" == "/en/about" %}class="active"{% endif %}><a href="{% url 'en_about' %}">About</a></li>
+                    <li {% if request.path|slice:"14" == "/en/investment" %}class="active"{% endif %}><a href="{% url 'en_investment' %}">Invest Team</a></li>
+                    <li {% if request.path|slice:"17" == "/en/investproject" %}class="active"{% endif %}><a href="{% url 'en_investproject' %}">Invest Project</a></li>
+                    <li {% if request.path|slice:"8" == "/en/news" %}class="active"{% endif %}><a href="{% url 'en_news' %}">News</a></li>
+                    <li {% if request.path|slice:"11" == "/en/contact" %}class="active"{% endif %}><a href="{% url 'en_contact' %}">Contact</a></li>
                 </ul>
             </div>
-            <div class="lang" style="display: none;">
+            <div class="lang">
                 <a {% if request.path|slice:"3" == "/en" %}class="active"{% endif %} href="/en/">EN</a><span>|</span><a {% if request.path|slice:"3" != "/en" %}class="active"{% endif %} href="/">中文</a>
             </div>
         </div>
@@ -38,7 +38,7 @@
     </div>
 </div>
 <div class="page-footer">
-    <p>光信投资管理（北京）有限公司</p>
+    <p>GuangXin investment management (Beijing) Co., Ltd.</p>
     <p>© 2015 GX Capital, All Rights Reserved.    京ICP备15018348号</p>
 </div>
 <script src="{% static "js/index.js" %}"></script>

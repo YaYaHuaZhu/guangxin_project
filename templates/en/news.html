@@ -1,0 +1,61 @@
+{% extends 'en/base.html' %}
+{% load staticfiles %}
+{% block title %}News-GuangXin Investment{% endblock %}
+
+{% block container %}
+    <div class="banner">
+        <img class="banner-bg" src="{{ MEDIA_URL }}{{ news_banner.banner_bg }}" alt="">
+        <div class="banner-info">
+            <span class="top-line"></span>
+            <h1 class="banner-title">{{ news_banner.name_en }}</h1>
+            <p class="banner-explain">{{ news_banner.explain_en }}</p>
+            <a class="link-bottom" href="#news">
+                <i class="arrow-down"></i>
+            </a>
+        </div>
+    </div>
+    <div id="news">
+        <ul class="news-list">
+            {% for item in news.object_list %}
+            <li class="news-item">
+                <a href="{% url 'en_news_show' item.id %}" class="news-link">
+                    <img class="news-bg" src="{{ MEDIA_URL }}{{ item.photo }}" alt="">
+                    <div class="news-info">
+                        <img class="info-logo" src="{% static 'img/news-logo.png' %}" alt="">
+                        <h2 class="news-title">{{ item.title_en }}</h2>
+                        <div class="news-time">
+                            <time class="month">{{ item.create_time|date:'m-d' }}</time>
+                            <time class="year">{{ item.create_time|date:'Y' }}</time>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <ul class="pagination">
+            {% if news.has_previous %}
+            <li><a href="?{{ all_news.previous_page_number.querystring }}#news">上一页</a></li>
+        {% endif %}
+        {% for page in news.pages %}
+            {% ifequal page news.number %}
+                <li class="active"><a>{{ page }}</a></li>
+            {% else %}
+                <li><a href="?{{ page.querystring }}#news">{{ page }}</a></li>
+            {% endifequal %}
+        {% endfor %}
+        {% if news.has_next %}
+            <li><a href="?{{ news.next_page_number.querystring }}#news">下一页</a></li>
+        {% endif %}
+        </ul>
+    </div>
+    <div id="newWrap">
+        <div class="new-header">
+            <h1 class="new-title"></h1>
+        </div>
+        <div class="new-content">
+        </div>
+        <div class="new-footer">
+            <button id="close">&Chi;</button>
+        </div>
+    </div>
+{% endblock %}

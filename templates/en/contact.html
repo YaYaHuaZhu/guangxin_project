@@ -1,0 +1,35 @@
+{% extends 'en/base.html' %}
+{% load staticfiles %}
+{% block title %}联系我们-光信投资{% endblock %}
+
+{% block container %}
+    <div class="banner">
+        <img class="banner-bg" src="{{ MEDIA_URL }}{{ contact_banner.banner_bg }}" alt="">
+        <div class="banner-info">
+            <span class="top-line"></span>
+            <h1 class="banner-title">{{ contact_banner.name_en }}</h1>
+            <p class="banner-explain">{{ contact_banner.explain_en }}</p>
+            <a class="link-bottom" href="#contact">
+                <i class="arrow-down"></i>
+            </a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="contact-top">
+            <div class="contact-info">
+                <p class="info-explain">Address：{{ contact.address_en }}</p>
+                <p class="info-explain">Phone：{{ contact.phone }}</p>
+                <p class="info-explain">Fax：{{ contact.fax }} </p>
+                <p class="info-explain">Business Email：{{ contact.business_email }}</p>
+                <p class="info-explain">Join Us：{{ contact.hr_email }}</p>
+                <p class="info-explain">Follow Us：<span class="icon-wrap"><img class="icon"
+                                                                          src="{% static 'img/wechat-icon.gif' %}" alt=""><img
+                        class="qr" src="{{ MEDIA_URL }}{{ contact.wechat_qr }}" alt=""></span></p>
+            </div>
+            <div class="contact-map">
+                <img src="{{ MEDIA_URL }}{{ contact.map }}" alt="">
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

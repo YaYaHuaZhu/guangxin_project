@@ -1,0 +1,13 @@
+{% extends 'en/base.html' %}
+{% load staticfiles %}
+{% block title %}Index-GuangXin Investment{% endblock %}
+
+{% block container %}
+    <video class="video" autoplay="autoplay" loop="loop" src="{{ MEDIA_URL }}{{ index_banner.background_video }}"></video>
+    <div class="content-wrapper">
+        <div class="content">
+            <img src="{{ MEDIA_URL }}{{ index_banner.banner_info_en }}" alt="GuangXin InvestMent">
+            <a href="{% url 'about' %}">More<span>→</span></a>
+        </div>
+    </div>
+{% endblock %}

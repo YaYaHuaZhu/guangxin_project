@@ -1,0 +1,43 @@
+{% extends 'en/base.html' %}
+{% load staticfiles %}
+{% block title %}About-GuangXin Investment{% endblock %}
+
+{% block container %}
+    <div class="banner">
+        <img class="banner-bg" src="{{ MEDIA_URL }}{{ about_banner.banner_bg }}" alt="">
+        <div class="banner-info">
+            <span class="top-line"></span>
+            <h1 class="banner-title">{{ about_banner.name_en }}</h1>
+            <p class="banner-explain">{{ about_banner.explain_en }}</p>
+            <a class="link-bottom" href="#about">
+                <i class="arrow-down"></i>
+            </a>
+        </div>
+    </div>
+    <div id="about">
+        <div class="about-us">
+            <div class="img-wrap">
+                <img src="{{ MEDIA_URL }}{{ about_us_info.image }}" alt="关于我们banner">
+            </div>
+            <div class="about-us-info">
+                <span class="top-line"></span>
+                <h2 class="about-us-title">{{ about_us_info.title_en }}</h2>
+                <p class="about-us-explain">{{ about_us_info.explain_en }}</p>
+            </div>
+        </div>
+        <div class="honors">
+            <div class="honors-info">
+                <span class="top-line"></span>
+                <h2 class="honors-title">{{ honor_info.title_en }}</h2>
+                <ul class="honors-explain">
+                    {% for item in honors %}
+                    <li class="honors-item">{{ item.name_en }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="img-wrap">
+                <img src="{{ MEDIA_URL }}{{ honor_info.image }}" alt="">
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'en/base.html' %}
+{% load staticfiles %}
+{% block title %}InvestMent Team-GuangXin Investment{% endblock %}
+
+{% block container %}
+    <div class="banner">
+        <img class="banner-bg" src="{{ MEDIA_URL }}{{ investment_banner.banner_bg }}" alt="">
+        <div class="banner-info">
+            <span class="top-line"></span>
+            <h1 class="banner-title">{{ investment_banner.name_en }}</h1>
+            <p class="banner-explain">{{ investment_banner.explain_en }}</p>
+            <a class="link-bottom" href="#invest">
+                <i class="arrow-down"></i>
+            </a>
+        </div>
+    </div>
+    <div id="invest">
+        <div class="invest-top">
+            <div class="invest-info">
+                <span class="top-line"></span>
+                <h2 class="invest-title">InvestMent Team</h2>
+                <p class="invest-explain">The current investment and management team, the majority graduated from Tsinghua University, the country's top university, had before in KKR, Morgan Stanley, CICC, IDG, Ping and other domestic and foreign top financial institutions work experience.</p>
+            </div>
+            <ul class="invest-list right">
+                {% for item in investmenth %}
+                    <li class="invest-item">
+                        <img class="person-photo" src="{{ MEDIA_URL }}{{ item.photo }}" alt="">
+                        <div class="person-info">
+                            <span class="top-line"></span>
+                            <h3 class="person-name">{{ item.name }}</h3>
+                            <p class="person-explain">{{ item.description }}</p>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <ul class="invest-list">
+            {% for item in investmentc %}
+                <li class="invest-item">
+                    <img class="person-photo" src="{{ MEDIA_URL }}{{ item.photo }}" alt="">
+                    <div class="person-info">
+                        <span class="top-line"></span>
+                        <h3 class="person-name">{{ item.name }}</h3>
+                        <p class="person-explain">{{ item.description }}</p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
