@@ -23,6 +23,9 @@ html {
 html, body, .wrapper {
   height: 100%; }
 
+body {
+  background-color: black; }
+
 img, video {
   vertical-align: middle; }
 
