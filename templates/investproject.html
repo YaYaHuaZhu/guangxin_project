@@ -17,7 +17,7 @@
     <div id="investProject">
         <div class="invest-pro-top">
             <h2 class="invest-pro-title">投资项目</h2>
-            <div class="invest-pro-select">
+            <div class="invest-pro-select" style="display: none;">
                 <strong>分类：</strong>
                 <a {% ifequal type '' %}class="active"{% endifequal %} href="?type=#investProject">全部</a>
                 {% for item in category %}
