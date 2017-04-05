@@ -200,7 +200,7 @@ class EnNewsShowView(View):
     def get(self, request, news_id):
         news_show = News.objects.get(id=int(news_id))
         news_show = {
-            "title": news_show.title,
+            "title": news_show.title_en,
             "content": news_show.content_en
         }
         return HttpResponse(json.dumps(news_show), content_type='application/json')
