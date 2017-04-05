@@ -332,7 +332,7 @@ img, video {
       .honors {
         height: 540px;
         width: 100%;
-        background-color: $background-gray;
+        background-color: $background-white;
         margin-top: 20px;
         overflow: hidden;
         @include respond-to(md) {
@@ -341,7 +341,6 @@ img, video {
         .honors-info {
           float: left;
           width: 520px;
-          color: $background-white;
           padding: 80px 30px;
           overflow-y: auto;
           height: 380px;
@@ -363,6 +362,7 @@ img, video {
           .honors-explain {
             margin-top: 30px;
             width: 100%;
+            color: $color-gray;
             .honors-item {
               width: 100%;
               overflow: hidden;
