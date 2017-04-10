@@ -12,6 +12,7 @@ $color-gray: rgb(154, 154, 154);
 $background-alpha: rgba(0, 0, 0, 0.5);
 $background-contact-link: rgb(246, 246, 246);
 $border-color: rgba(181, 181, 181, 0.5);
+$banner-text: rgb(192, 25, 32);
 
 $breakpoints: (
         'md': 'only screen and ( max-width: 1500px)',
@@ -213,7 +214,7 @@ img, video {
         height: 100%;
       }
       .banner-info {
-        color: $background-white;
+        color: $banner-text;
         position: absolute;
         left: 160px;
         top: 50px;
@@ -225,7 +226,7 @@ img, video {
           display: block;
           width: 40px;
           height: 4px;
-          background-color: $background-white;
+          background-color: $banner-text;
           opacity: 0;
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s .5s forwards;
@@ -255,7 +256,7 @@ img, video {
           display: block;
           width: 45px;
           height: 45px;
-          border: 1px solid $background-white;
+          border: 1px solid $banner-text;
           border-radius: 50%;
           position: relative;
           opacity: 0;
