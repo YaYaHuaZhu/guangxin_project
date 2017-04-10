@@ -249,6 +249,8 @@ img, video {
           animation: DownToTop 1s 1.5s forwards;
           @include respond-to(md) {
             max-width: 920px;
+            font-size: 30px;
+            line-height: 40px;
           }
         }
         .link-bottom {
