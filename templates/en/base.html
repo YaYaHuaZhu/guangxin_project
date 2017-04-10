@@ -22,8 +22,8 @@
                 <ul id="nav">
                     <li {% if request.path == "/en/" %}class="active"{% endif %}><a href="{% url 'en_index' %}">Index</a></li>
                     <li {% if request.path|slice:"9" == "/en/about" %}class="active"{% endif %}><a href="{% url 'en_about' %}">About</a></li>
-                    <li {% if request.path|slice:"14" == "/en/investment" %}class="active"{% endif %}><a href="{% url 'en_investment' %}">Invest Team</a></li>
-                    <li {% if request.path|slice:"17" == "/en/investproject" %}class="active"{% endif %}><a href="{% url 'en_investproject' %}">Invest Project</a></li>
+                    <li {% if request.path|slice:"8" == "/en/team" %}class="active"{% endif %}><a href="{% url 'en_investment' %}">Invest Team</a></li>
+                    <li {% if request.path|slice:"13" == "/en/protfolio" %}class="active"{% endif %}><a href="{% url 'en_investproject' %}">Invest Project</a></li>
                     <li {% if request.path|slice:"8" == "/en/news" %}class="active"{% endif %}><a href="{% url 'en_news' %}">News</a></li>
                     <li {% if request.path|slice:"11" == "/en/contact" %}class="active"{% endif %}><a href="{% url 'en_contact' %}">Contact</a></li>
                 </ul>

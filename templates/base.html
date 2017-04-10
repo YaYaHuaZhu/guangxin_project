@@ -22,8 +22,8 @@
                 <ul id="nav">
                     <li {% if request.path == "/" %}class="active"{% endif %}><a href="{% url 'index' %}">首页</a></li>
                     <li {% if request.path|slice:"6" == "/about" %}class="active"{% endif %}><a href="{% url 'about' %}">关于我们</a></li>
-                    <li {% if request.path|slice:"11" == "/investment" %}class="active"{% endif %}><a href="{% url 'investment' %}">投资团队</a></li>
-                    <li {% if request.path|slice:"14" == "/investproject" %}class="active"{% endif %}><a href="{% url 'investproject' %}">投资项目</a></li>
+                    <li {% if request.path|slice:"5" == "/team" %}class="active"{% endif %}><a href="{% url 'investment' %}">投资团队</a></li>
+                    <li {% if request.path|slice:"10" == "/portfolio" %}class="active"{% endif %}><a href="{% url 'investproject' %}">投资项目</a></li>
                     <li {% if request.path|slice:"5" == "/news" %}class="active"{% endif %}><a href="{% url 'news' %}">新闻报道</a></li>
                     <li {% if request.path|slice:"8" == "/contact" %}class="active"{% endif %}><a href="{% url 'contact' %}">联系我们</a></li>
                 </ul>
