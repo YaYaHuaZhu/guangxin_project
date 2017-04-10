@@ -169,6 +169,9 @@ img, video {
           opacity: 0;
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s 1s forwards; }
+          @media only screen and (max-width: 1500px) {
+            .main .container .banner .banner-info .banner-title {
+              line-height: 50px; } }
         .main .container .banner .banner-info .banner-explain {
           margin-top: 15px;
           font-size: 36px;
@@ -179,7 +182,9 @@ img, video {
           animation: DownToTop 1s 1.5s forwards; }
           @media only screen and (max-width: 1500px) {
             .main .container .banner .banner-info .banner-explain {
-              max-width: 920px; } }
+              max-width: 920px;
+              font-size: 30px;
+              line-height: 40px; } }
         .main .container .banner .banner-info .link-bottom {
           margin-top: 25px;
           display: block;
@@ -191,6 +196,9 @@ img, video {
           opacity: 0;
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s 2s forwards; }
+          @media only screen and (max-width: 1500px) {
+            .main .container .banner .banner-info .link-bottom {
+              margin-top: 10px; } }
           .main .container .banner .banner-info .link-bottom .arrow-down {
             position: absolute;
             top: 0;
