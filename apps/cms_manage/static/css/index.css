@@ -163,6 +163,7 @@ img, video {
           transform: translate3D(0, 0, 0);
           animation: DownToTop 1s .5s forwards; }
         .main .container .banner .banner-info .banner-title {
+          margin-top: 10px;
           font-size: 46px;
           line-height: 76px;
           font-weight: normal;
