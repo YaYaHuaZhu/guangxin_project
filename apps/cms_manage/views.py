@@ -16,7 +16,7 @@ class IndexView(View):
         index_banner = IndexBanner.objects.all().order_by('-order')
         if index_banner:
             index_banner = index_banner[0]
-        return render(request, "index.html", {
+        return render(request, "index_change.html", {
             "index_banner": index_banner
         })
 

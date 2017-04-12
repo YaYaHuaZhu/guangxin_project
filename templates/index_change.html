@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}首页-光信投资{% endblock %}
+
+{% block css %}
+    .main {
+            height: 100%;
+            overflow: hidden;
+    }
+    .main .index-bg {
+        width: 100%;
+        height: 100%;
+    }
+    .main .content-wrapper .content{
+        left: 50%;
+        top: 25%;
+    }
+    .main .content-wrapper .content a {
+        color: white;
+        background-color: #c01920;
+        border: 1px solid transparent !important;
+    }
+    .main .content-wrapper .content a:hover {
+        border: 1px solid #F07B1B !important;
+    }
+{% endblock %}
+
+{% block container %}
+    <video class="video" autoplay="autoplay" loop="loop" src="{{ MEDIA_URL }}{{ index_banner.background_video }}"></video>
+    <div class="content-wrapper">
+        <div class="content">
+            <img class="index-bg" src="{% static "img/index-bg.jpg" %}">
+            <div class="content-wrapper">
+                <div class="content">
+                    <img src="{% static "img/index-bg.jpg" %}" alt="光信资本">
+                    <a href="{% url 'about' %}">了解更多<span>→</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
