@@ -1,12 +1,15 @@
-{% extends 'base.html' %}
 {% load staticfiles %}
-{% block title %}首页-光信投资{% endblock %}
-
-{% block css %}
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <title>光信</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <style>
         .main {
-                height: 100%;
-                overflow: hidden;
+            height: 100%;
+            overflow: hidden;
         }
         .main .index-bg {
             width: 100%;
@@ -25,19 +28,28 @@
             border: 1px solid #F07B1B !important;
         }
     </style>
-{% endblock %}
-
-{% block container %}
-    <video class="video" autoplay="autoplay" loop="loop" src="{{ MEDIA_URL }}{{ index_banner.background_video }}"></video>
-    <div class="content-wrapper">
-        <div class="content">
-            <img class="index-bg" src="{% static "img/index-bg.jpg" %}">
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="{% static 'css/ie.css' %}">
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <div class="main">
+        <div class="container">
+            <img class="index-bg" src="{% static 'img/index-bg.jpg' %}">
             <div class="content-wrapper">
                 <div class="content">
-                    <img src="{% static "img/index-zt.png" %}" alt="光信资本">
-                    <a href="{% url 'about' %}">了解更多<span>→</span></a>
+                    <img src="{% static 'img/index-zt.png' %}" alt="光信资本">
+                    <a href="about.html">了解更多<span>→</span></a>
                 </div>
             </div>
         </div>
     </div>
-{% endblock %}
+</div>
+<div class="page-footer">
+    <p>光信投资管理（北京）有限公司</p>
+    <p>© 2015 GX Capital, All Rights Reserved.    京ICP备15018348号</p>
+</div>
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
