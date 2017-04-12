@@ -63,7 +63,7 @@ img, video {
             padding: 0 20px;
             text-align: center;
             font: 14px/60px "Microsoft YaHei UI", sans-serif;
-            color: black;
+            color: #c01920;
             transition: .2s; }
             .main .page-header .page-nav ul li a:hover {
               color: #bf1921; }

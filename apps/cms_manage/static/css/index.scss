@@ -13,6 +13,7 @@ $background-alpha: rgba(0, 0, 0, 0.5);
 $background-contact-link: rgb(246, 246, 246);
 $border-color: rgba(181, 181, 181, 0.5);
 $banner-text: rgb(192, 25, 32);
+$link-color: rgb(192, 25, 32);
 
 $breakpoints: (
         'md': 'only screen and ( max-width: 1500px)',
@@ -108,7 +109,7 @@ img, video {
             padding: 0 20px;
             text-align: center;
             font: 14px/60px "Microsoft YaHei UI", sans-serif;
-            color: $font-black;
+            color: $link-color;
             transition: .2s;
             &:hover {
               color: $link-active;
