@@ -172,7 +172,9 @@ img, video {
           animation: DownToTop 1s 1s forwards; }
           @media only screen and (max-width: 1500px) {
             .main .container .banner .banner-info .banner-title {
-              line-height: 50px; } }
+              margin-top: 20px;
+              line-height: 50px;
+              font-size: 36px; } }
         .main .container .banner .banner-info .banner-explain {
           margin-top: 15px;
           font-size: 36px;
@@ -186,7 +188,7 @@ img, video {
           @media only screen and (max-width: 1500px) {
             .main .container .banner .banner-info .banner-explain {
               max-width: 920px;
-              font-size: 30px;
+              font-size: 26px;
               line-height: 40px;
               height: 80px;
               overflow: hidden; } }
