@@ -293,9 +293,11 @@ img, video {
             line-height: 50px; }
           .main .container #about .honors .honors-info .honors-explain {
             margin-top: 30px;
-            color: #9a9a9a; }
+            color: #9a9a9a;
+            width: auto; }
             .main .container #about .honors .honors-info .honors-explain .honors-item {
-              padding-right: 30px;
+              width: auto;
+              padding-right: 80px;
               white-space: nowrap;
               font-size: 16px;
               line-height: 36px; }

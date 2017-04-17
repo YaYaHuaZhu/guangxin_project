@@ -379,8 +379,10 @@ img, video {
           .honors-explain {
             margin-top: 30px;
             color: $color-gray;
+            width: auto;
             .honors-item {
-              padding-right: 30px;
+              width: auto;
+              padding-right: 80px;
               white-space: nowrap;
               font-size: 16px;
               line-height: 36px;
