@@ -28,7 +28,7 @@
         <ul class="invest-pro-list">
             {% for item in invest_pro %}
             <li class="invest-pro-item">
-                <img class="invest-pro-item-bg" src="{% static 'img/test/invest-pro.jpg' %}" alt="">
+                <img class="invest-pro-item-bg" src="{{ MEDIA_URL }}{{ item.photo }}" alt="">
                 <div class="invest-pro-item-info">
                     <p class="info-url">{{ item.http_url }}</p>
                     <p class="info-explain">{{ item.description }}</p>
