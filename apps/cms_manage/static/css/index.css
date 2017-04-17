@@ -293,6 +293,7 @@ img, video {
             line-height: 50px; }
           .main .container #about .honors .honors-info .honors-explain {
             margin-top: 30px;
+            padding-right: 30px;
             color: #9a9a9a; }
             .main .container #about .honors .honors-info .honors-explain .honors-item {
               width: 100%;
