@@ -45,7 +45,7 @@ class ContactAdmin(object):
     list_filter = ['order', 'create_time']
     model_icon = 'fa fa-tasks'
 
-xadmin.site.register(InvestMent, InvestMentAdmin)
+# xadmin.site.register(InvestMent, InvestMentAdmin)
 xadmin.site.register(InvestProCategory, InvestProCategoryAdmin)
 xadmin.site.register(InvestPro, InvestProAdmin)
 xadmin.site.register(News, NewsAdmin)

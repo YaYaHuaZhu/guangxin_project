@@ -48,9 +48,9 @@ class ContactBannerAdmin(object):
     model_icon = 'fa fa-file-archive-o'
 
 
-xadmin.site.register(IndexBanner, IndexBannerAdmin)
+# xadmin.site.register(IndexBanner, IndexBannerAdmin)
 xadmin.site.register(AboutBanner, AboutBannerAdmin)
-xadmin.site.register(InvestMentBanner, InvestMentBannerAdmin)
+# xadmin.site.register(InvestMentBanner, InvestMentBannerAdmin)
 xadmin.site.register(InvestProBanner, InvestProBannerAdmin)
 xadmin.site.register(NewsBanner, NewsBannerAdmin)
 xadmin.site.register(ContactBanner, ContactBannerAdmin)
