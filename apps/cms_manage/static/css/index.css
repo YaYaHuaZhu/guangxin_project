@@ -21,9 +21,7 @@ html {
   font-family: "Microsoft YaHei UI", sans-serif; }
 
 html, body, .wrapper {
-  height: 100%;
-  width: 100%;
-  min-width: 1200px; }
+  height: 100%; }
 
 body {
   background-color: black; }
