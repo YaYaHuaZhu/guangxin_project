@@ -23,10 +23,10 @@ html {
 html, body, .wrapper {
   height: 100%;
   width: 100%;
-  min-width: 1200px; }
+  min-width: 1500px; }
   @media only screen and (max-width: 1500px) {
     html, body, .wrapper {
-      min-width: 1500px; } }
+      min-width: 1200px; } }
 
 body {
   background-color: black; }
