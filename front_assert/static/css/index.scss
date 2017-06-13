@@ -584,8 +584,8 @@ img, video {
             }
           }
           .invest-pro-item-bg {
-            width: 280px;
-            height: 280px;
+            width: 270px;
+            height: 270px;
             @include respond-to(md) {
               width: 220px;
               height: 220px;
@@ -595,16 +595,16 @@ img, video {
             position: absolute;
             left: 0;
             top: 0;
-            width: 260px;
-            height: 260px;
+            width: 250px;
+            height: 250px;
             padding: 10px;
             color: $background-white;
             background-color: $invest-pro-bg;
             opacity: 0;
             @include respond-to(md) {
               padding: 10px;
-              width: 210px;
-              height: 210px;
+              width: 200px;
+              height: 200px;
             }
             .info-url, .info-explain {
               font-size: 15px;
