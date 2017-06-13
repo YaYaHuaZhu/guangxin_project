@@ -610,6 +610,11 @@ img, video {
               font-size: 15px;
               line-height: 22px;
               margin-bottom: 16px;
+              @include respond-to(md) {
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 15px;
+              }
             }
           }
         }
