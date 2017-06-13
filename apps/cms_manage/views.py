@@ -58,7 +58,7 @@ class InvestMentView(View):
 class InvestProjectView(View):
     def get(self, request):
         category = InvestProCategory.objects.all().order_by('-order')
-        invest_pro = InvestPro.objects.all()
+        invest_pro = InvestPro.objects.all().order_by('-order')
         type = request.GET.get('type', '')
         if type:
             invest_pro = invest_pro.filter(category=type)
